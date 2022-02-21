@@ -42,7 +42,7 @@ Route::get('/logout',[AdminController::class,'logout']);
 //Route::view('/admin','backend.module',['header'=>'網站標題管理','module'=>'Title']);
 
 //將/admin導向/admin/title
-Route::redirect('/admin','/quiz01/public/admin/title');
+Route::redirect('/admin','/admin/title');
 
 //Route::view('/admin/title','backend.title');
 
