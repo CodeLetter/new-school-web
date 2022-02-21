@@ -56,7 +56,7 @@ class HomeController extends Controller
             $subs=$menu->subs; //這裡用ORM方式,取代上面那一行,去看Menu.php的裡面有個function叫subs
             $menu->subs=$subs;
             
-            $menus[$key]=$menu;
+            //$menus[$key]=$menu;
         }
 
         if(Auth::user()){
@@ -76,7 +76,7 @@ class HomeController extends Controller
             session()->put('visiter',$total->total); //寫法(二)
         } */
         $this->view['ads']=$ads;
-        $this->view['menus']=$menus;
+        $this->view['menus']=$menu;
         $this->view['images']=$images;
     }
 
